@@ -77,6 +77,9 @@
     .home-user-name {
         @apply ml-4 text-2xl font-sans-bold text-primary;
     }
+    .home-user-subtitle {
+        @apply ml-4 font-sans-medium text-muted-foreground;
+    }
 
     .home-add-icon {
         @apply size-12;
