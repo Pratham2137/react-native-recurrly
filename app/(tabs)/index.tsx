@@ -1,5 +1,4 @@
-import { Link } from "expo-router";
-import { FlatList, Image, ScrollView, Text, View } from "react-native";
+import { FlatList, Image, Text, View } from "react-native";
 import { styled } from "nativewind";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import images from "@/constants/images";
@@ -42,7 +41,9 @@ export default function App() {
                   </View>
                 </View>
 
-                <Image source={icons.add} className="home-add-icon" />
+                <View className="home-add-icon items-center justify-center">
+                  <Image source={icons.add} className="size-8" />
+                </View>
               </View>
 
               <View className="home-balance-card">
@@ -98,7 +99,7 @@ export default function App() {
           ListEmptyComponent={
             <Text className="home-empty-state">No Subscriptions yet.</Text>
           }
-          contentContainerClassName="pb-26"
+          contentContainerClassName="pb-24"
         />
       </View>
     </SafeAreaView>
